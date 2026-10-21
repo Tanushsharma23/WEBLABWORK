@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - About Us</title>
+  <link rel="stylesheet" href="e_commerce.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">SHOPPING ZONE<span>.</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="ABOUTUS.html" class="active">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark Mode">🌙</button>
+        <button id="cart-btn" class="btn-cart">
+          🛒 Cart <span id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="page-title">About ShopEase</h1>
+    
+    <div class="about-hero">
+      <div class="about-text">
+        <h2>Welcome to Your Ultimate Shopping Destination</h2>
+        <p>Founded in 2026, ShopEase was designed to simplify online shopping by delivering a seamless, user-friendly experience paired with top-grade curated products.</p>
+        <p>We empower customers across the globe to discover modern tech, high-end apparel, and stylish everyday accessories with complete ease and trust.</p>
+      </div>
+      <div class="about-img">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80" alt="ShopEase Team">
+      </div>
+    </div>
+
+    <div class="about-values section">
+      <div class="value-card">
+        <h3>🎯 Our Mission</h3>
+        <p>To render shopping transparent, fast, and accessible for everyone through superior front-end experience and reliable service quality.</p>
+      </div>
+      <div class="value-card">
+        <h3>🚀 Our Vision</h3>
+        <p>To become the leading digital destination for modern lifestyle products with unmatched customer satisfaction worldwide.</p>
+      </div>
+      <div class="value-card">
+        <h3>✨ Why Choose Us?</h3>
+        <p>We guarantee handpicked product selections, competitive prices, intuitive shopping interfaces, and dedicated customer assistance.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-info">
+        <h3>ShopEase<span>.</span></h3>
+        <p>Your one-stop destination for quality shopping.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ShopEase. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Your Shopping Cart</h2>
+      <div id="cart-items-container"></div>
+      <div class="cart-summary">
+        <h3>Total: $<span id="cart-total-price">0.00</span></h3>
+        <button class="btn btn-primary" onclick="alert('Checkout functional simulation complete!')">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

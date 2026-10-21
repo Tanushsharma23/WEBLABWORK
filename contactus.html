@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - Contact Us</title>
+  <link rel="stylesheet" href="e_commerce.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">SHOPPING ZONE<span>.</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="ABOUTUS.html">About Us</a></li>
+          <li><a href="contactus.html" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark Mode">🌙</button>
+        <button id="cart-btn" class="btn-cart">
+          🛒 Cart <span id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="page-title">Get in Touch</h1>
+
+    <div class="contact-grid">
+      <!-- Contact Details -->
+      <div class="contact-info">
+        <h2>Store Information</h2>
+        <p>Have questions about products, orders, or feedback? Reach out to us anytime!</p>
+        
+        <div class="info-item">
+          <strong>📍 Address:</strong>
+          <p>123 Commerce Way, Tech City, TC 45678</p>
+        </div>
+        <div class="info-item">
+          <strong>📧 Email:</strong>
+          <p>support@shopease.com</p>
+        </div>
+        <div class="info-item">
+          <strong>📞 Phone:</strong>
+          <p>+1 (800) 555-EASE</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-card">
+        <form id="contact-form" novalidate>
+          <div id="form-message" class="form-message"></div>
+
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" placeholder="John Doe">
+            <small class="error-msg"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" placeholder="john@example.com">
+            <small class="error-msg"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="+1 234 567 8900">
+            <small class="error-msg"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" placeholder="Order Enquiry">
+            <small class="error-msg"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" rows="5" placeholder="Write your message here..."></textarea>
+            <small class="error-msg"></small>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-info">
+        <h3>ShopEase<span>.</span></h3>
+        <p>Your one-stop destination for quality shopping.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ShopEase. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Your Shopping Cart</h2>
+      <div id="cart-items-container"></div>
+      <div class="cart-summary">
+        <h3>Total: $<span id="cart-total-price">0.00</span></h3>
+        <button class="btn btn-primary" onclick="alert('Checkout functional simulation complete!')">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

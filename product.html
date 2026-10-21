@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - Products</title>
+  <link rel="stylesheet" href="e_commerce.css"
+<body>
+  <!-- Header & Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">SHOPPING ZONE<span>.</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html" class="active">Product</a></li>
+          <li><a href="ABOUTUS.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark Mode">🌙</button>
+        <button id="cart-btn" class="btn-cart">
+          🛒 Cart <span id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Products Catalog Section -->
+  <main class="container section">
+    <h1 class="page-title">Our Products</h1>
+    
+    <!-- Controls: Search & Category Filter -->
+    <div class="shop-controls">
+      <div class="search-box">
+        <input type="text" id="product-search" placeholder="Search products by name...">
+      </div>
+      <div class="category-filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="electronics">Electronics</button>
+        <button class="filter-btn" data-category="clothing">Clothing</button>
+        <button class="filter-btn" data-category="accessories">Accessories</button>
+      </div>
+    </div>
+
+    <!-- Products Grid (8+ items rendered via JS) -->
+    <div class="product-grid" id="all-products-grid"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-info">
+        <h3>ShopEase<span>.</span></h3>
+        <p>Your one-stop destination for quality shopping.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ShopEase. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modals -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Your Shopping Cart</h2>
+      <div id="cart-items-container"></div>
+      <div class="cart-summary">
+        <h3>Total: $<span id="cart-total-price">0.00</span></h3>
+        <button class="btn btn-primary" onclick="alert('Checkout functional simulation complete!')">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="product-modal" class="modal">
+    <div class="modal-content product-detail-content">
+      <span class="close-modal">&times;</span>
+      <div id="product-detail-body" class="product-detail-grid"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

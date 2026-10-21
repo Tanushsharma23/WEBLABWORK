@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - Home</title>
+  <link rel="stylesheet" href="e_commerce.css">
+</head>
+<body>
+  <!-- Header & Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">SHOPPING ZONE<span>.</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="ABOUTUS.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark Mode">🌙</button>
+        <button id="cart-btn" class="btn-cart">
+          🛒 Cart <span id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero / Banner Section -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h1>Discover Premium Products at Unbeatable Prices</h1>
+        <p>Explore our curated collection of high-quality electronics, trendy fashion, and stylish accessories designed for your lifestyle.</p>
+        <button id="hero-shop-btn" class="btn btn-primary">Shop Now</button>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="ShopEase Hero Banner">
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="categories container section">
+    <h2 class="section-title">Shop by Category</h2>
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=500&q=80" alt="Electronics">
+        <div class="category-overlay">
+          <h3>Electronics</h3>
+          <a href="products.html?category=electronics" class="btn btn-sm">Explore</a>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=500&q=80" alt="Clothing">
+        <div class="category-overlay">
+          <h3>Clothing</h3>
+          <a href="products.html?category=clothing" class="btn btn-sm">Explore</a>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80" alt="Accessories">
+        <div class="category-overlay">
+          <h3>Accessories</h3>
+          <a href="products.html?category=accessories" class="btn btn-sm">Explore</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section id="featured-products" class="container section">
+    <h2 class="section-title">Featured Products</h2>
+    <div class="product-grid" id="featured-grid">
+      <!-- Dynamically populated via script.js -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-info">
+        <h3>ShopEase<span>.</span></h3>
+        <p>Your one-stop destination for quality shopping.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ShopEase. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Shopping Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Your Shopping Cart</h2>
+      <div id="cart-items-container"></div>
+      <div class="cart-summary">
+        <h3>Total: $<span id="cart-total-price">0.00</span></h3>
+        <button class="btn btn-primary" onclick="alert('Checkout functional simulation complete!')">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Details Modal -->
+  <div id="product-modal" class="modal">
+    <div class="modal-content product-detail-content">
+      <span class="close-modal">&times;</span>
+      <div id="product-detail-body" class="product-detail-grid"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
